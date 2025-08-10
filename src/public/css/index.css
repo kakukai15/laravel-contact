@@ -1,0 +1,175 @@
+main {
+    max-width: 700px;
+    margin: 50px auto 80px;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8B7969;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    width: 200px;
+    font-size: 1rem;
+    padding-right: 20px;
+    white-space: nowrap;
+    color: #7a6f63;
+}
+
+.required {
+    color: #ff8b8b;
+    margin-left: 2px;
+}
+
+.input-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-row .input-wrap {
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.name-row .input-wrap>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.name-row .input-wrap input[type="text"] {
+    height: 36px;
+    border: none;
+    background-color: #f4f3f3;
+    padding-left: 10px;
+    color: #a09c97;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.name-row .input-wrap .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    white-space: nowrap;
+}
+
+.gender-row .input-wrap {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.gender-inputs {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gender-inputs label {
+    margin-right: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.gender-inputs input[type="radio"] {
+    margin-right: 6px;
+}
+
+.phone-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.phone-inputs input[type="tel"] {
+    width: 80px;
+    height: 36px;
+    background-color: #f4f3f3;
+    border: none;
+    padding-left: 10px;
+    color: #a09c97;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.phone-inputs input[type="tel"]:last-child {
+    margin-right: 0;
+}
+
+/* 電話番号入力欄とエラーメッセージの横並び */
+.phone-row .input-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.phone-row .error {
+    display: inline-block;
+    color: red;
+    font-size: 0.9rem;
+    margin: 0 8px 0 0;
+    white-space: nowrap;
+}
+
+/* 他の入力欄 */
+.email-row input[type="email"],
+.address-row input[type="text"],
+.building-row input[type="text"],
+.category-row select,
+.message-row textarea {
+    width: 100%;
+    background-color: #f4f3f3;
+    border: none;
+    padding: 10px;
+    color: #a09c97;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* お問い合わせ内容 */
+.message-row textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* 送信ボタン */
+.submit-row {
+    justify-content: center;
+    display: flex;
+}
+
+.submit-row button {
+    background-color: #7a6f63;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: opacity 0.3s;
+}
+
+.submit-row button:hover {
+    opacity: 0.8;
+}
+
+/* エラーメッセージの共通スタイル */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}

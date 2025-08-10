@@ -1,0 +1,39 @@
+main {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem 3rem;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #4f4f4f;
+}
+
+main h2 {
+    display: inline-block;
+    /* 幅をテキスト分だけに */
+    padding-left: -40px;
+    /* 左に20px空けて右にずらす */
+    text-align: center;
+    /* テキスト中央揃え */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #8B7969;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+}
+
+form button {
+    background-color: #a89485;
+    border: none;
+    padding: 0.8rem 3rem;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #847661;
+}

@@ -1,0 +1,106 @@
+.confirm-main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #4f4f4f;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.site-title {
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #9f8e82;
+    margin-bottom: 0.5rem;
+}
+
+.confirm-title {
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: #9f8e82;
+    margin-bottom: 2rem;
+}
+
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.confirm-table th,
+.confirm-table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem 1rem;
+    vertical-align: top;
+}
+
+.confirm-table th {
+    background-color: #a89485;
+    color: white;
+    width: 30%;
+    text-align: left;
+}
+
+.confirm-table td {
+    background-color: #fff;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-submit,
+.btn-correct {
+    background-color: #a89485;
+    border: none;
+    padding: 0.6rem 2rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-correct {
+    background-color: transparent;
+    color: #a89485;
+    border: none;
+    text-decoration: underline;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: #847661;
+}
+
+.btn-correct:hover {
+    background-color: transparent;
+    color: #7a6f63;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .confirm-main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .btn-submit,
+    .btn-correct {
+        width: 100%;
+        padding: 0.8rem 0;
+    }
+}
