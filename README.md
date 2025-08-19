@@ -18,6 +18,9 @@ Laravel環境構築
 - Laravel 8.75 以上
 - MySQL 8.0
 
+## ER図
+![ER図](images/er_diagram.png)
+
 ## URL
 開発環境:http://localhost
 phpMyAdmin: http://localhost:8080
